@@ -1,0 +1,118 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model IdentityRole
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+@{
+	ViewData["Title"] = "Crear un Roles";
+}
+<style>
+	body {
+		background-color: #f8f9fa;
+		padding: 50px;
+	}
+
+	h1 {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	form {
+		max-width: 500px;
+		margin: 0 auto;
+		padding: 30px;
+		border-radius: 10px;
+		box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+	}
+
+	.form-group {
+		margin-bottom: 20px;
+	}
+
+	.form-control {
+		border-radius: 5px;
+	}
+
+	input[type="submit"] {
+		width: 100%;
+		border-radius: 5px;
+		margin-bottom: 10px;
+	}
+
+	a.btn-secondary {
+		width: 100%;
+		border-radius: 5px;
+	}
+</style>
+<h1>CREACIÓN DE ROLES</h1>
+<br />
+<section class="container">
+	<form asp-action="Create">
+		<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+		<div class="form-group">
+			<label asp-for="Name" class="control-label">Nombre</label>
+			<input asp-for="Name" class="form-control" id="nameInput" />
+			<span asp-validation-for="Name" class="text-danger"></span>
+		</div>
+
+		@* Campo Id oculto por la utilizacion de display:none*@
+		<div class="form-group" style="display:none;">
+			<label asp-for="Id" class="control-label">ID</label>
+			<input asp-for="Id" class="form-control" id="idInput" />
+			<span asp-validation-for="Id" class="text-danger"></span>
+		</div>
+
+		<div class="form-group">
+			<input type="submit" value="Crear" class="btn btn-primary"/>
+			<a href="@Url.Action("Index")" class="btn btn-secondary">Volver a la lista</a>
+		</div>
+	</form>
+</section>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+	@section Scripts {
+		@{
+			await Html.RenderPartialAsync("_ValidationScriptsPartial");
+		}
+	}
+
+	<script>
+		// Obtener referencias a los campos de entrada
+		const nameInput = document.getElementById('nameInput');
+		const idInput = document.getElementById('idInput');
+
+		// Agregar un event listener para el evento de cambio en el campo Name
+		nameInput.addEventListener('input', function () {
+			// Copiar el valor del campo Name al campo Id
+			idInput.value = nameInput.value;
+		});
+	</script>
+	<style>
+
+		.container {
+			display: auto;
+			justify-content: center;
+			max-width: 1800px;
+			width: 100%;
+			padding: 0 10px;
+		}
+
+	</style>

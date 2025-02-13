@@ -1,0 +1,90 @@
+﻿@model IEnumerable<PIV_PROYECTO_Final.Models.CANCIONES_USUARIO>
+
+@{
+	ViewData["Title"] = "CARRITO";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="~/style.css">
+
+	<style>
+
+		body {
+			margin: 80px;
+			padding: 0;
+			background-color: transparent;
+		}
+
+		.container {
+			border: 2px solid #ccc;
+			border-radius: 10px;
+			padding: 20px;
+			margin: 50px auto;
+			max-width: 800px;
+			background-color: rgba(255, 255, 255, 0.8);
+			text-align: center;
+		}
+
+			.container h1 {
+				text-align: center;
+			}
+
+	</style>
+
+</head>
+<body class="body-carrito">
+	<h1>CARRITO DE COMPRAS</h1>
+	<table class="table table-striped table-bordered">
+		<thead class="thead-dark">
+			<tr>
+				<th>Nombre</th>
+				<th>Genero</th>
+				<th>Precio</th>
+				<th>Edición</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in Model)
+			{
+				if (item.ID_USUARIO == @ViewBag.IdUsuario && item.ESTADO == 1)
+				{
+					<tr>
+						<td>@Html.DisplayFor(modelItem => item.IdCancionNavigation.NombreCancion)</td>
+						<td>@Html.DisplayFor(modelItem => item.IdCancionNavigation.CodigoGenero)</td>
+						<td>&#8353;@(item.IdCancionNavigation.PrecioCancion.ToString("N0"))</td>
+						<td>
+							<a asp-action="Delete" asp-route-id="@item.ID_CANCIONES_USUARIO" class="btn btn-sm btn-danger">Eliminar</a>
+						</td>
+					</tr>
+				}
+			}
+
+		</tbody>
+	</table>
+
+	<p style="font-size: 24px;text-align:center;">SubTotal: &#8353;@(ViewBag.TotalCanciones.ToString("N0"))</p>
+	<input type="hidden" id="IdUsuario" value="@ViewBag.IdUsuario" />
+	<button type="button" class="btn btn-primary" id="btnComprar">Comprar</button>
+	<a class="btn btn-md btn-info" asp-controller="VentaCanciones" asp-action="Index">Listado de Compras</a>
+
+	<br />
+
+	<script>
+		localStorage.setItem('total', @ViewBag.TotalCanciones);
+		localStorage.setItem('idUsuario', document.getElementById('IdUsuario').value);
+		document.getElementById("btnComprar").addEventListener("click", function () {
+			var idUsuario = localStorage.getItem('idUsuario');
+			window.location.href = '/VentaCanciones/Create?idUsuario=' + idUsuario;
+		});
+	</script>
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+</body>
+</html>

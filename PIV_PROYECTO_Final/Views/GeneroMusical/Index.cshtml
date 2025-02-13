@@ -1,0 +1,155 @@
+﻿@model IEnumerable<PIV_PROYECTO_Final.Models.GeneroMusical>
+
+@{
+	ViewData["Title"] = "GENEROS MÚSICALES";
+}
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Catálogo</title>
+	<link rel="stylesheet" href="~/style.css">
+	<link rel="stylesheet" href="~/genero-style.css">
+</head>
+
+<body class="body-genero">
+
+	<section class="container mb-4">
+	</section>
+
+
+	<section class="container">
+		<div class="row">
+			<div class="col-sm-10">
+				<input type="text" id="inputId" class="form-control" placeholder="A-Z" pattern="\d{1}-\d{4}-\d{4}">
+			</div>
+			<div class="col-sm-2">
+				<input type="text" id="inputGenero" class="form-control" placeholder="Género" readonly>
+			</div>
+		</div>
+		<div class="row mt-2">
+			<div class="col-sm-12">
+				<button id="btnBuscar" class="btn btn-sm btn-primary mr-2" type="button">Buscar</button>
+				<button id="btnRestablecer" class="btn btn-sm btn-info" type="button">Restablecer</button>
+			</div>
+		</div>
+	</section>
+</body>
+<hr />
+<body>
+
+	<section class="oneMusic-catalogos has-fluid bg-gray section-padding-100">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<div class="section-heading style-2">
+						<h2>GENEROS MUSICALES</h2>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12">
+					<div class="row" id="cancionesContainer">
+						@foreach (var item in Model)
+						{
+							<div class="col-12 col-sm-6 col-md-4 col-lg-2 single-album-area">
+								<div style="text-align: center;" class="album-info">
+									<a href="#" onclick="mostrarDetalles('@Html.DisplayFor(modelItem => item.CodigoGenero)', '@Html.DisplayFor(modelItem => item.DescripcionGenero)')">
+										<h5>@Html.DisplayFor(modelItem => item.CodigoGenero)</h5>
+									</a>
+									<p class="genero">@Html.DisplayFor(modelItem => item.DescripcionGenero)</p>
+									<div style="text-align: center;">
+										<a href="@Url.Action("Edit", new { id = item.CodigoGenero })" style="color: #999;">Editar</a>
+									</div>
+								</div>
+							</div>
+						}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<div class="modal fade" id="cancionModal" tabindex="-1" role="dialog" aria-labelledby="cancionModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="cancionModalLabel">Detalles del Genero</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body" id="cancionModalBody">
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+
+		function mostrarDetalles(titulo, artista) {
+
+			var modalContent = `
+													<h5>${titulo}</h5>
+													<p>Descripcion: ${artista}</p>
+													<!-- Agrega más detalles si es necesario -->
+												`;
+
+			document.getElementById('cancionModalBody').innerHTML = modalContent;
+
+			$('#cancionModal').modal('show');
+		}
+
+
+		document.addEventListener('DOMContentLoaded', function () {
+			const btnBuscar = document.getElementById('btnBuscar');
+			const btnRestablecer = document.getElementById('btnRestablecer');
+			const inputId = document.getElementById('inputId');
+			const inputGenero = document.getElementById('inputGenero');
+
+			btnBuscar.addEventListener('click', function () {
+				const idBusqueda = inputId.value.trim().toLowerCase();
+				const generoBusqueda = inputGenero.value.trim().toLowerCase();
+				const rows = document.querySelectorAll('.single-album-area');
+
+				if (idBusqueda === "" && generoBusqueda === "") {
+					alert("Por favor ingresa un título o un género para buscar.");
+					return;
+				}
+
+				rows.forEach(function (row) {
+					const titulo = row.querySelector('h5').textContent.trim().toLowerCase();
+					const genero = row.querySelector('.genero').textContent.trim().toLowerCase();
+
+					if ((idBusqueda === "" || titulo.includes(idBusqueda)) && (generoBusqueda === "" || genero.includes(generoBusqueda))) {
+						row.style.display = 'block';
+					} else {
+						row.style.display = 'none';
+					}
+				});
+			});
+
+			btnRestablecer.addEventListener('click', function () {
+				const rows = document.querySelectorAll('.single-album-area');
+
+				rows.forEach(function (row) {
+					row.style.display = 'block';
+				});
+
+				inputId.value = '';
+				inputGenero.value = '';
+			});
+		});
+	</script>
+</body>

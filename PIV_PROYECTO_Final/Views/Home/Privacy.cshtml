@@ -1,0 +1,89 @@
+﻿@{
+    ViewData["Title"] = "Sobre Nosotros";
+}
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+<h1>@ViewData["Title"]</h1>
+
+</br>
+</br>
+
+<div class="integrante-container">
+    <div class="integrante">
+        <img src="~/img/bg-img/marvin.jpg" alt="Marvin Martínez Bolivar">
+        <p>Marvin Martínez Bolivar</p>
+        <p>Front-End</p>
+    </div>
+
+    <div class="integrante">
+        <img src="~/img/bg-img/zuricka.jpg" alt="Zuricka Mitchell">
+        <p>Zuricka Mitchell</p>
+        <p>Back-End</p>
+    </div>
+
+    <div class="integrante">
+        <img src="~/img/bg-img/jean.jpg" alt="Jean Mendoza">
+        <p>Jean Mendoza</p>
+        <p>Back-End</p>
+    </div>
+
+    <div class="integrante">
+        <img src="~/img/bg-img/michael.jpg" alt="Michael Marin">
+        <p>Michael Marin</p>
+        <p>Back-End</p>
+    </div>
+</div>
+
+<div class="text-center mt-4">
+    <a href="/" class="btn btn-secondary">Regresar a Inicio</a>
+</div>
+
+<style>
+    .integrante-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .integrante {
+        margin: 0 20px 20px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+        .integrante img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            transition: transform 0.10s ease-in-out, opacity 1s ease-out;
+        }
+
+        .integrante:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Animación al cargar la página */
+        .integrante img {
+            opacity: 0;
+        }
+
+            .integrante img.loaded {
+                opacity: 1;
+            }
+</style>
+
+<script>
+    // Detectar cuando las imágenes se cargan y agregar la clase 'loaded' para aplicar la animación
+    window.addEventListener('load', function () {
+        var images = document.querySelectorAll('.integrante img');
+        images.forEach(function (img) {
+            img.classList.add('loaded');
+        });
+    });
+</script>

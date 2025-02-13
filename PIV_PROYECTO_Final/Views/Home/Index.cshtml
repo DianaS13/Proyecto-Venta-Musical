@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="~/style.css">
+	<title>PAV MUSIC Store</title>
+</head>
+
+<body>
+	<section class="container">
+		<!-- Preloader -->
+		<div class="preloader d-flex align-items-center justify-content-center">
+			<div class="lds-ellipsis">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+		<!-- Carrusel  -->
+		<section class="hero-area">
+			<div class="hero-slides owl-carousel">
+				<!-- Slide -->
+				<div class="single-hero-slide d-flex align-items-center justify-content-center">
+					<!-- Imagen -->
+					<div class="slide-img bg-img" style="background-image: url(img/bg-img/bg1.jpg);"></div>
+					<!-- Contenido Slide -->
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<div class="hero-slides-content text-center">
+									<h6 data-animation="fadeInUp" data-delay="100ms">KarolG</h6>
+									<h2 data-animation="fadeInUp" data-delay="300ms">PROVENZA <span>PROVENZA</span></h2>
+									<a data-animation="fadeInUp" data-delay="400ms" href="https://localhost:7036/ModuloCanciones" class="btn oneMusic-btn mt-50">Catálogo <i class="fa fa-angle-double-right"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Slide -->
+				<div class="single-hero-slide d-flex align-items-center justify-content-center">
+					<!-- Imagen -->
+					<div class="slide-img bg-img" style="background-image: url(img/bg-img/bg2.jpg);"></div>
+					<!-- Contenido Slide -->
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<div class="hero-slides-content text-center">
+									<h6 data-animation="fadeInUp" data-delay="100ms">The Weeknd</h6>
+									<h2 data-animation="fadeInUp" data-delay="300ms">ONE OF THE GIRLS <span>ONE OF THE GIRLS</span></h2>
+									<a data-animation="fadeInUp" data-delay="400ms" href="https://localhost:7036/ModuloCanciones" class="btn oneMusic-btn mt-50">Catálogo <i class="fa fa-angle-double-right"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Slide -->
+				<div class="single-hero-slide d-flex align-items-center justify-content-center">
+					<!-- Imagen -->
+					<div class="slide-img bg-img" style="background-image: url(img/bg-img/bg3.jpg);"></div>
+					<!-- Contenido Slide -->
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<div class="hero-slides-content text-center">
+									<h6 data-animation="fadeInUp" data-delay="100ms">Billie Eilish</h6>
+									<h2 data-animation="fadeInUp" data-delay="300ms">BAD GUY <span>BAD GUY</span></h2>
+									<a data-animation="fadeInUp" data-delay="400ms" href="https://localhost:7036/ModuloCanciones" class="btn oneMusic-btn mt-50">Catálogo <i class="fa fa-angle-double-right"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Area de Videos -->
+		<section class="oneMusic-catalogos has-fluid bg-gray section-padding-100">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12">
+						<div class="section-heading style-2">
+							<h1>EN ONE MUSIC</h1>
+							<h2>ESTÁN LOS MEJORES ÉXITOS</h2>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<!-- Función para mostrar álbum individual -->
+					<script>
+						function albumIndividual(imgSrc, videoUrl, titulo, artista, delay) {
+							return `
+																		<div class="col-12 col-sm-6 col-md-4 col-lg-2">
+																			<div class="single-album-area wow fadeInUp" data-wow-delay="${delay}ms">
+																				<div class="album-thumb">
+																					<img src="${imgSrc}" alt="">
+																					<div class="play-icon">
+																						<a href="${videoUrl}" class="video--play--btn"><span class="icon-play-button"></span></a>
+																					</div>
+																				</div>
+																				<div class="album-info">
+																					<a href="#">
+																						<h5>${titulo}</h5>
+																					</a>
+																					<p>${artista}</p>
+																				</div>
+																			</div>
+																		</div>`;
+						}
+					</script>
+
+					<!-- Álbumes individuales -->
+					<div class="row">
+						<script>
+							document.write(albumIndividual("img/bg-img/b1.jpg", "https://www.youtube.com/watch?v=4NRXx6U8ABQ", "Blinding Lights", "The Weeknd", 100));
+							document.write(albumIndividual("img/bg-img/b2.jpg", "https://www.youtube.com/watch?v=TmKh7lAwnBI", "Dákiti", "Bad Bunny & Jhay", 200));
+							document.write(albumIndividual("img/bg-img/b3.jpg", "https://www.youtube.com/watch?v=E07s5ZYygMg", "Watermelon Sugar", "Harry Styles", 300));
+							document.write(albumIndividual("img/bg-img/b4.jpg", "https://www.youtube.com/watch?v=TUVcZfQe-Kw", "Levitating", "Dua Lipa ft. DaBaby", 400));
+							document.write(albumIndividual("img/bg-img/b5.jpg", "https://www.youtube.com/watch?v=GrAchTdepsU", "Mood", "24kGoldn ft. iann dior", 500));
+							document.write(albumIndividual("img/bg-img/b6.jpg", "https://www.youtube.com/watch?v=LIIDh-qI9oI", "Save Your Tears", "The Weeknd & Ariana Grande", 600));
+							document.write(albumIndividual("img/bg-img/b7.jpg", "https://www.youtube.com/watch?v=JGwWNGJdvx8", "Shape of You", "Ed Sheeran", 700));
+							document.write(albumIndividual("img/bg-img/b8.jpg", "https://www.youtube.com/watch?v=cii6ruuycQA", "Deja Vu", "Olivia Rodrigo", 800));
+							document.write(albumIndividual("img/bg-img/b9.jpg", "https://www.youtube.com/watch?v=ca48oMV59LU", "Provenza", "Karol G", 900));
+							document.write(albumIndividual("img/bg-img/b10.jpg", "https://www.youtube.com/watch?v=Sdrinf_QefI", "Yo No Fumo", "Ricardo Montaner", 1000));
+							document.write(albumIndividual("img/bg-img/b11.jpg", "https://www.youtube.com/watch?v=cW8VLC9nnTo", "What Was I Made For? (Barbie Soundtrack)", "Billie Eilish", 1100));
+							document.write(albumIndividual("img/bg-img/b12.jpg", "https://www.youtube.com/watch?v=JdPkgNa9gT0", "Eres mi Religión", "Maná", 1200));
+						</script>
+					</div>
+
+					<!-- ##### Área del Artista Destacado ##### -->
+					<section class="artista-destacado section-padding-100 bg-img bg-overlay bg-fixed" style="background-image: url(img/bg-img/bg-4.jpg);">
+						<div class="container">
+							<div class="row align-items-end">
+								<div class="col-12 col-md-5 col-lg-4">
+									<div class="artista-destacado-thumb">
+										<img src="img/bg-img/fa.jpg" alt="">
+									</div>
+								</div>
+								<div class="col-12 col-md-7 col-lg-8">
+									<div class="artista-destacado-content">
+										<div class="section-heading white text-left mb-30">
+											<p>La más descargada del primer cuatrimestre</p>
+											<h2>COLDPLAY A SKY FULL OF STARS</h2>
+										</div>
+										<p>Según indicó Chris Martin en su visita a Costa Rica, el significado de A Sky Full of Stars de Coldplay, " Es la liberación que sientes después de haber escalado la montaña, después de haber hecho algo desafiante. Es por eso que esa canción es tan descaradamente feliz y bailable: porque eso es lo que necesitaba para ser. Me encanta cantarla. Sé que no rompimos el molde, pero es muy divertida de tocar”.</p>
+										<div class="song-play-area">
+											<div class="song-name">
+												<p>01. Canción Principal</p>
+											</div>
+											<audio preload="auto" controls>
+												<source src="audio/dummy-audio.mp3">
+											</audio>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr />
+						<hr />
+						<footer>
+							<div class="footer-index"></div>
+							<div class="container-fluid bg-dark text-white py-4">
+								<div class="container-footer">
+									<div class="row">
+										<div class="col-md-4">
+											<h7>ONE MUSIC | Diseñado por GrupoUNO para proyecto final de PAV </h7>
+										</div>
+										<div class="col-md-8 text-right">
+											<h7>I Cuatrimestre 2024</h7>
+										</div>
+									</div>
+								</div>
+							</div>
+						</footer>
+
+						<style>
+							.container {
+								display: auto;
+								justify-content: center;
+								max-width: 1800px;
+								width: 100%;
+								padding: 0 0px;
+							}
+
+							footer {
+								width: 100%;
+								height: 10%;
+								background-color: #000;
+								color: #fff;
+								padding: 0px 0;
+								position: fixed;
+								bottom: 0;
+								left: 0;
+								display: none;
+								transition: all 0.3s ease;
+							}
+						</style>
+						<script>
+							window.addEventListener('scroll', function () {
+								var footer = document.querySelector('footer');
+								if (window.scrollY > 0) {
+									footer.style.display = 'block';
+								} else {
+									footer.style.display = 'none';
+								}
+							});
+						</script>
+
+</body>
+</html>
+
+

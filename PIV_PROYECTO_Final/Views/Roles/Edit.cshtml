@@ -1,0 +1,88 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model IdentityRole
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+@{
+	ViewData["Title"] = "Editar Roles";
+}
+<style>
+	body {
+		background-color: #f8f9fa;
+		padding: 50px;
+	}
+
+	h1 {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	form {
+		max-width: 500px;
+		margin: 0 auto;
+		padding: 30px;
+		border-radius: 10px;
+		box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+	}
+
+	.form-group {
+		margin-bottom: 20px;
+	}
+
+	.form-control {
+		border-radius: 5px;
+	}
+
+	input[type="submit"] {
+		width: 100%;
+		border-radius: 5px;
+		margin-bottom: 10px;
+	}
+
+	a.btn-secondary {
+		width: 100%;
+		border-radius: 5px;
+	}
+</style>
+<h1>EDITAR ROLES</h1>
+<br />
+<section class="container text-center">
+	<section class="container">
+		<div class="row text-center">
+			<div class="col">
+				<form asp-action="Edit">
+					<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+					<input type="hidden" asp-for="Id" />
+					<div class="form-group">
+						<label asp-for="Name" class="control-label">Nombre</label>
+						<input asp-for="Name" class="form-control" />
+						<span asp-validation-for="Name" class="text-danger"></span>
+					</div>
+					<div class="form-group">
+						<input type="submit" value="Guardar" class="btn btn-primary" />
+						<a href="@Url.Action("Index")" class="btn btn-secondary">Volver a la lista</a>
+					</div>
+				</form>
+			</div>
+		</div>
+		
+
+		@section Scripts {
+			@{
+				await Html.RenderPartialAsync("_ValidationScriptsPartial");
+			}
+		}
+		<style>
+
+			.container {
+				display: auto;
+				justify-content: center;
+				max-width: 1800px;
+				width: 100%;
+				padding: 0 10px;
+			}
+
+		</style>

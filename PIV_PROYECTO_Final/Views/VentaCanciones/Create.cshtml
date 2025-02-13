@@ -1,0 +1,147 @@
+﻿@model PIV_PROYECTO_Final.Models.VentaCancione
+
+@{
+    ViewData["Title"] = "FACTURA";
+}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo</title>
+    <link rel="stylesheet" href="~/factura-style.css">
+</head>
+
+
+<style>
+ 
+</style>
+<br />
+<br />
+<br />
+<br />
+<br />
+
+
+<body onload="cargarTotal()">
+    <div class="row text-center">
+        <div class="col">
+
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <br />
+                    <h1 class="text-center">Factura</h1>
+                    <label asp-for="NumeroFactura" class="control-label">Número de factura</label>
+                    <input readonly id="NumeroFactura" asp-for="NumeroFactura" class="form-control" />
+                    <span asp-validation-for="NumeroFactura" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Subtotal" class="control-label"></label>
+                    <input id="Subtotal" readonly asp-for="Subtotal" class="form-control" />
+                    <span asp-validation-for="Subtotal" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Total" class="control-label"></label>
+                    <input readonly id="Total" asp-for="Total" class="form-control" />
+                    <span asp-validation-for="Total" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="FechaCompra" class="control-label">Fecha compra</label>
+                    <input readonly id="FechaCompra" asp-for="FechaCompra" class="form-control" />
+                    <span asp-validation-for="FechaCompra" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="hidden" readonly id="UsuariosIdentificacion" asp-for="UsuariosIdentificacion" class="form-control" />
+                    <span asp-validation-for="UsuariosIdentificacion" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <select readonly style="display: none;" asp-for="IdCancionesUsuario" class="form-control" asp-items="ViewBag.CodigoCancion"></select>
+                </div>
+                <div class="form-group">
+                    <button onclick="generarFacturaAutomatica()" class="btn btn-success mb-2">Generar Automático</button>
+                </div>
+                <br />
+                <div>
+                    <input type="text" id="numeroFacturaInput" class="form-control mb-2" placeholder="Número de factura">
+                    <button onclick="generarFacturaManualConInput()" class="btn btn-success">Generar Manual</button>
+                </div>
+                <div class="form-group mt-2">
+                    <a class="btn btn-sm btn-info" asp-controller="CANCIONES_USUARIO" asp-action="Index">Volver a carrito de compras</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+</body>
+
+<script>
+    function cargarTotal() {
+        var now = new Date();
+        var fechaActual = new Date();
+
+        // Obtener los componentes de la fecha
+        var año = fechaActual.getFullYear();
+        var mes = ('0' + (fechaActual.getMonth() + 1)).slice(-2); 
+        var dia = ('0' + fechaActual.getDate()).slice(-2);
+        var hora = ('0' + fechaActual.getHours()).slice(-2);
+        var minutos = ('0' + fechaActual.getMinutes()).slice(-2);
+        var segundos = ('0' + fechaActual.getSeconds()).slice(-2);
+
+        // Formatear la fecha
+        var fechaFormateada = año + '-' + mes + '-' + dia + ' ' + hora + ':' + minutos + ':' + segundos;
+
+        // Insert date and time into HTML
+        document.getElementById("FechaCompra").value = fechaFormateada;
+
+        var total = localStorage.getItem('total');
+        var id = localStorage.getItem('idUsuario');
+
+        console.log(id);
+        console.log(localStorage.getItem('idUsuario'));
+
+        var idSinGuiones = id.replace(/-/g, '');
+        var numFactura = año + mes + dia + hora + minutos + segundos + idSinGuiones;
+
+        document.getElementById("Subtotal").value = total;
+        document.getElementById("Total").value = parseInt(parseInt(total) + (parseInt(total) * 0.13));
+        document.getElementById("UsuariosIdentificacion").value = idSinGuiones;
+        document.getElementById("NumeroFactura").value = numFactura.length > 20 ? numFactura.slice(0, 20) : numFactura;
+    }
+
+    function generarFacturaAutomatica() {
+        var now = new Date();
+        var fechaActual = new Date();
+
+        var año = fechaActual.getFullYear();
+        var mes = ('0' + (fechaActual.getMonth() + 1)).slice(-2);
+        var dia = ('0' + fechaActual.getDate()).slice(-2);
+        var hora = ('0' + fechaActual.getHours()).slice(-2);
+        var minutos = ('0' + fechaActual.getMinutes()).slice(-2);
+        var segundos = ('0' + fechaActual.getSeconds()).slice(-2);
+
+        var id = localStorage.getItem('idUsuario');
+        var idSinGuiones = id.replace(/-/g, '');
+        var numFactura = año + mes + dia + hora + minutos + segundos + idSinGuiones;
+
+        document.getElementById("NumeroFactura").value = numFactura.length > 20 ? numFactura.slice(0, 20) : numFactura;
+    }
+
+    function generarFacturaManualConInput() {
+        var numFactura = document.getElementById("numeroFacturaInput").value;
+        if (numFactura) {
+            document.getElementById("NumeroFactura").value = numFactura.slice(0, 20);
+        }
+    }
+</script>
+
+
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

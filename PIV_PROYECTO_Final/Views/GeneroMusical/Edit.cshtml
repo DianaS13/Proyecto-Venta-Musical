@@ -1,0 +1,61 @@
+﻿@model PIV_PROYECTO_Final.Models.GeneroMusical
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<head>
+    <link rel="stylesheet" href="~/genero-style.css">
+</head>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<h1>Editar la descripcion del genero</h1>
+
+<hr />
+<div class="row text-center">
+    <!-- Alineación central directamente en la fila -->
+    <div class="col">
+        <!-- Esto permite que el contenido se extienda para llenar el ancho -->
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="CodigoGenero" />
+            <div class="form-group">
+                <label asp-for="CodigoGenero" class="control-label">Codigo del genero</label>
+                <input asp-for="CodigoGenero" class="form-control" readonly />
+                <span asp-validation-for="CodigoGenero" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DescripcionGenero" class="control-label">Descripcion</label>
+                <input asp-for="DescripcionGenero" class="form-control" />
+                <span asp-validation-for="DescripcionGenero" class="text-danger"></span>
+            </div>
+            <div class="form-center">
+                <input type="submit" value="Guardar" class="btn btn-sm btn-primary" />
+                <a class="btn btn-sm btn-info" asp-action="Index">Volver</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

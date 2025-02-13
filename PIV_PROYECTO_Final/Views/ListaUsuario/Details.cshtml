@@ -1,0 +1,24 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model PIV_PROYECTO_Final.Data.Usuario
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<h1 style="text-align: center;">Actualizar Usuario</h1>
+<hr />
+<div class="card">
+    <h5 class="card-header">Detalles del Usuario</h5>
+    <div class="card-body">
+        <h5 class="card-title">@Model.NombreCompleto</h5>
+        <p class="card-text">Email: @Model.Email</p>
+        <p class="card-text">Teléfono: @Model.PhoneNumber</p>
+        <p class="card-text">Género: @Model.Genero</p>
+        <p class="card-text">Tipo de Tarjeta: @Model.TipoTarjeta</p>
+        <p class="card-text">Número de Tarjeta: @Model.NumeroTarjeta</p>
+        <a href="@Url.Action("Edit", new { id = Model?.Id })" class="btn btn-primary">Editar</a>
+        <a href="@Url.Action("Index")" class="btn btn-secondary">Volver a la lista</a>
+    </div>
+</div>

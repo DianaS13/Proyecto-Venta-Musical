@@ -1,0 +1,30 @@
+.container {
+	display: flex;
+	justify-content: center;
+	max-width: 100%;
+	width: auto;
+	padding: 0 0px;
+}
+
+.login-container {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 9999;
+}
+
+
+.login-form {
+	background-color: rgba(255, 255, 255, 0.9);
+	padding: 30px;
+	border-radius: 10px;
+}
+
+.container {
+	display: auto;
+	justify-content: center;
+	max-width: 1800px;
+	width: 100%;
+	padding: 0 0px;
+}

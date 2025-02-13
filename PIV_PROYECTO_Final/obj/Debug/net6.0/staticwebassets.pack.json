@@ -1,0 +1,605 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\PIV_PROYECTO_Final.bundle.scp.css",
+      "PackagePath": "staticwebassets\\PIV_PROYECTO_Final.omok8powo0.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\audio\\dummy-audio.mp3",
+      "PackagePath": "staticwebassets\\audio\\dummy-audio.mp3"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\comprar-style.css",
+      "PackagePath": "staticwebassets\\comprar-style.css"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\css\\animate.css",
+      "PackagePath": "staticwebassets\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\css\\audioplayer.css",
+      "PackagePath": "staticwebassets\\css\\audioplayer.css"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\css\\classy-nav.css",
+      "PackagePath": "staticwebassets\\css\\classy-nav.css"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\css\\one-music-icon.css",
+      "PackagePath": "staticwebassets\\css\\one-music-icon.css"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\cuenta-style.css",
+      "PackagePath": "staticwebassets\\cuenta-style.css"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\factura-style.css",
+      "PackagePath": "staticwebassets\\factura-style.css"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\fonts\\classy.eot",
+      "PackagePath": "staticwebassets\\fonts\\classy.eot"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\fonts\\classy.svg",
+      "PackagePath": "staticwebassets\\fonts\\classy.svg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\fonts\\classy.ttf",
+      "PackagePath": "staticwebassets\\fonts\\classy.ttf"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\fonts\\classy.woff",
+      "PackagePath": "staticwebassets\\fonts\\classy.woff"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\fonts\\icomoon.eot",
+      "PackagePath": "staticwebassets\\fonts\\icomoon.eot"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\fonts\\icomoon.svg",
+      "PackagePath": "staticwebassets\\fonts\\icomoon.svg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\fonts\\icomoon.ttf",
+      "PackagePath": "staticwebassets\\fonts\\icomoon.ttf"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\fonts\\icomoon.woff",
+      "PackagePath": "staticwebassets\\fonts\\icomoon.woff"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\genero-style.css",
+      "PackagePath": "staticwebassets\\genero-style.css"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\b1.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\b1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\b10.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\b10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\b11.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\b11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\b12.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\b12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\b2.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\b2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\b3.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\b3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\b4.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\b4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\b5.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\b5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\b6.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\b6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\b7.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\b7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\b8.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\b8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\b9.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\b9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\bg-10.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\bg-10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\bg-11.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\bg-11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\bg-12.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\bg-12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\bg-13.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\bg-13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\bg-14.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\bg-14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\bg-2.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\bg-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\bg-4.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\bg-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\bg1.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\bg1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\bg10.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\bg10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\bg2.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\bg2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\bg3.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\bg3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\bg4.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\bg4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\bg5.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\bg5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\bg6.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\bg6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\bg7.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\bg7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\bg8.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\bg8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\bg9.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\bg9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\cerveza_imperial.eps",
+      "PackagePath": "staticwebassets\\img\\bg-img\\cerveza_imperial.eps"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\default.png",
+      "PackagePath": "staticwebassets\\img\\bg-img\\default.png"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\fa.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\fa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\invoice.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\invoice.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\jean.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\jean.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\logoamerican.png",
+      "PackagePath": "staticwebassets\\img\\bg-img\\logoamerican.png"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\logomastercard.png",
+      "PackagePath": "staticwebassets\\img\\bg-img\\logomastercard.png"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\logovisa.png",
+      "PackagePath": "staticwebassets\\img\\bg-img\\logovisa.png"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\marvin.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\marvin.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\michael.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\michael.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\userlogin.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\userlogin.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\bg-img\\zuricka.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-img\\zuricka.jpg"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\core-img\\PAVLOGO.png",
+      "PackagePath": "staticwebassets\\img\\core-img\\PAVLOGO.png"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\core-img\\favicon.ico",
+      "PackagePath": "staticwebassets\\img\\core-img\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\img\\core-img\\logo.png",
+      "PackagePath": "staticwebassets\\img\\core-img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\js\\active.js",
+      "PackagePath": "staticwebassets\\js\\active.js"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\js\\bootstrap\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\js\\bootstrap\\popper.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\js\\jquery\\jquery-2.2.4.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery\\jquery-2.2.4.min.js"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\js\\plugins\\plugins.js",
+      "PackagePath": "staticwebassets\\js\\plugins\\plugins.js"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\scss\\_fonts.scss",
+      "PackagePath": "staticwebassets\\scss\\_fonts.scss"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\scss\\_mixin.scss",
+      "PackagePath": "staticwebassets\\scss\\_mixin.scss"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\scss\\_responsive.scss",
+      "PackagePath": "staticwebassets\\scss\\_responsive.scss"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\scss\\_theme_color.scss",
+      "PackagePath": "staticwebassets\\scss\\_theme_color.scss"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\scss\\style.scss",
+      "PackagePath": "staticwebassets\\scss\\style.scss"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\style.css",
+      "PackagePath": "staticwebassets\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\style.css.map",
+      "PackagePath": "staticwebassets\\style.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JuFons\\Downloads\\Entrega Proyecto Final\\PAV_PF_Grupo1\\PIV_PROYECTO_Final\\wwwroot\\usuario-style.css",
+      "PackagePath": "staticwebassets\\usuario-style.css"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.PIV_PROYECTO_Final.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.PIV_PROYECTO_Final.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.PIV_PROYECTO_Final.props",
+      "PackagePath": "build\\PIV_PROYECTO_Final.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.PIV_PROYECTO_Final.props",
+      "PackagePath": "buildMultiTargeting\\PIV_PROYECTO_Final.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.PIV_PROYECTO_Final.props",
+      "PackagePath": "buildTransitive\\PIV_PROYECTO_Final.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

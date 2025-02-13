@@ -1,0 +1,62 @@
+﻿@model PIV_PROYECTO_Final.Models.GeneroMusical
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo</title>
+    <link rel="stylesheet" href="~/genero-style.css">
+</head>
+@{
+    ViewData["Title"] = "Create";
+}
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<h1 class="text-center">Nuevos Generos Musicales</h1>
+<section class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="CodigoGenero" class="control-label">Nombre del Genero</label>
+                    <input asp-for="CodigoGenero" class="form-control" id="codigoGeneroInput" />
+                    <span asp-validation-for="CodigoGenero" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DescripcionGenero" class="control-label">Descripcion del genero</label>
+                    <input asp-for="DescripcionGenero" class="form-control" />
+                    <span asp-validation-for="DescripcionGenero" class="text-danger"></span>
+                </div>
+                <div class="form-group text-center">
+                    <input type="submit" value="Crear" class="btn btn-sm btn-primary" />
+                    <a class="btn btn-sm btn-info" asp-action="Index">Volver</a>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+</section>
+
+<br />
+
+@*
+<script>
+    var codigoGeneroInput = document.getElementById('codigoGeneroInput');
+    codigoGeneroInput.addEventListener('input', function () {
+        var valor = this.value;
+        var numeros = valor.replace(/\D/g, '');
+        if (numeros !== valor) {
+            this.value = numeros;
+        }
+    });
+</script>
+*@
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

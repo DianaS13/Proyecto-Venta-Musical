@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<PIV_PROYECTO_Final.Data.Usuario> SignInManager
+@inject UserManager<PIV_PROYECTO_Final.Data.Usuario> UserManager
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ONE Music - Online Store -</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/style.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+
+    <header class="header-area">
+        <!-- Navbar Area -->
+        <div class="oneMusic-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="containerLayout">
+                    <!-- Menu -->
+                    <section class="containerLayout">
+                        <nav class="classy-navbar justify-content-between" id="oneMusicNav">
+
+                            <!-- Nav brand -->
+                            <a class="nav-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                                <img src="~/img/core-img/PAVLOGO.png" alt="Logo" />
+                            </a>
+                            <!-- Menu -->
+                            <div class="classy-menu">
+
+                                <!-- Close Button -->
+                                <div class="classycloseIcon">
+                                    <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                                </div>
+
+                                <!-- Nav Start -->
+                                <div class="classynav">
+                                    <ul>
+	                                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Inicio</a></li>
+	                                    <li><a asp-area="" asp-controller="ModuloCanciones" asp-action="Index">Catálogo</a></li>
+                                        @if (SignInManager.IsSignedIn(User))
+                                        {
+                                            <!--Para personalizar el menú del administrador-->
+                                            @if (UserManager.IsInRoleAsync(await UserManager.GetUserAsync(User), "Administrador").Result)
+                                            {
+                                                <li>
+                                                    <a href="#">Administrador </a>
+                                                    <ul class="dropdown">
+                                                        <li>
+                                                            <a href="#">Menú Crear</a>
+                                                            <ul class="dropdown">
+                                                                <li><a href="https://localhost:7036/ListaUsuario/create"> - Usuario</a></li>
+                                                                <li><a href="https://localhost:7036/Roles/Create"> - Rol</a></li>
+                                                                <li><a href="https://localhost:7036/GeneroMusical/Create"> - Genero Músical</a></li>
+                                                                <li><a href="https://localhost:7036/ModuloCanciones/Create"> - Canción</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Mantenimiento</a>
+                                                            <ul class="dropdown">
+                                                                <li><a href="https://localhost:7036/ListaUsuario"> - Usuarios</a></li>
+                                                                <li><a href="https://localhost:7036/Roles"> - Roles</a></li>
+                                                                <li><a href="https://localhost:7036/GeneroMusical/"> - Generos</a></li>
+                                                                <li><a href="https://localhost:7036/ModuloCanciones"> - Catálogo</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            }
+                                            else
+                                            {
+                                                <!-- Solo se mostrará el enlace al perfil de usuario cuando haya un usuario autenticado que no sea administrador -->
+                                                <li><a href="https://localhost:7036/Identity/Account/manage">Perfil Usuario</a></li>
+                                            }
+                                        }
+                                        <li><a asp-area="" asp-controller="Home" asp-action="Privacy">Sobre Nosotros</a></li>
+                                    </ul>
+
+                                    <div class="login-register-cart-button d-flex align-items-center">
+                                        @if (SignInManager.IsSignedIn(User))
+                                        {
+                                            <!-- Si el usuario está autenticado, muestra el saludo y el botón de Logout -->
+                                            <div class="white-text user-greeting">¡Hola, @User.Identity?.Name!</div>
+                                            <ul><li><a asp-area="" asp-controller="CANCIONES_USUARIO" asp-action="Index"><i class="fa fa-cart-arrow-down"></i></a></li></ul>
+
+                                            <div class="login-register-btn mr-50">
+                                                <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                                                    <button type="submit" class="nav-link btn btn-link white-text">Cerrar Sesión</button>
+                                                </form>
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            <!-- Si el usuario no está autenticado, muestra el botón de Login -->
+                                            <div class="login-register-btn mr-50">
+                                                <a href="https://localhost:7036/Identity/Account/Login" id="loginBtn" class="white-text">Login</a>
+                                            </div>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid bg-dark text-white py-4">
+            <div class="container-footer">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h7>ONE MUSIC | Diseñado por GrupoUNO para proyecto final de PAV </h7>
+                    </div>
+                    <div class="col-md-8 text-right">
+                        
+                        <h7>I Cuatrimestre 2024</h7> <!-- Aquí puedes insertar el código para mostrar el año actual -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener('scroll', function () {
+            var footer = document.querySelector('footer');
+            if (window.scrollY > 0) {
+                footer.style.display = 'block';
+            } else {
+                footer.style.display = 'none';
+            }
+        });
+    </script>
+    <script src="~/js/jquery/jquery-2.2.4.min.js"></script>
+    <script src="~/js/bootstrap/popper.min.js"></script>
+    <script src="~/js/bootstrap/bootstrap.min.js"></script>
+    <script src="~/js/plugins/plugins.js"></script>
+    <script src="~/js/active.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+
+    <style>
+
+        .containerLayout {
+            display: auto;
+            justify-content: center;
+            max-width: 1800px;
+            width: 100%;
+            padding: 0 10px;
+        }
+
+    </style>
+
+
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+﻿@using Microsoft.AspNetCore.Identity
+@model List<PIV_PROYECTO_Final.Models.ListaUsuario.RolesConUsuarios>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de usuarios activos</title>
+    <link rel="stylesheet" href="~/style.css">
+</head>
+<h1 class="text-center">LISTADO DE USUARIOS ACTIVOS</h1>
+<h6>Busqueda de usuario</h6>
+<section class="container">
+    <div class="input-group mb-3">
+        <input type="text" id="inputId" class="form-control" placeholder="Cédula (0-0000-0000)" pattern="\d{1}-\d{4}-\d{4}">
+        <input type="text" id="inputNombre" class="form-control" placeholder="Por Nombre">
+        <div class="input-group-append">
+            <button id="btnBuscar" class="btn btn-outline-secondary" type="button">Buscar</button>
+            <button id="btnRestablecer" class="btn btn-outline-secondary" type="button">Restablecer</button>
+        </div>
+    </div>
+</section>
+
+
+    <table class="table table-striped table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>Identificación</th>
+                <th>Email</th>
+                <th>Nombre Completo</th>
+                <th>Género</th>
+                <th>Tarjeta</th>
+                <th>Teléfono</th>
+                <th>Rol</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.UsuarioId</td>
+                    <td>@user.Email</td>
+                    <td>@user.UsuarioNombre</td>
+                    <td>@user.Genero</td>
+                    <td>
+                        <button class="btn btn-sm btn-secondary mostrar-tarjeta">Mostrar | Ocultar</button>
+                        <div class="tarjeta-info" style="display:none;">
+                            <br />
+                            <img class="logo-tarjeta" src="" alt="Logo de la tarjeta">
+                            <span class="numero-tarjeta">@user.NumeroTarjeta</span>
+                        </div>
+                    </td>
+                    <td>@user.Telefono</td>
+                    <td>@user.RolId</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@user.UsuarioId" class="btn btn-sm btn-primary">Editar</a>
+                        <a asp-action="Details" asp-route-id="@user.UsuarioId" class="btn btn-sm btn-info">Detalles</a>
+                        <a asp-action="CambiarContrasena" asp-route-id="@user.UsuarioId" class="btn btn-sm btn-warning">Cambiar Contraseña</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</section>
+
+<!-- Agregar enlaces a jQuery y Bootstrap JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<style>
+
+    .logo-tarjeta {
+        max-width: 100px;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .container {
+        display: auto;
+        justify-content: center;
+        max-width: 1800px;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+</style>
+<script>
+    $(document).ready(function () {
+        $('.mostrar-tarjeta').click(function () {
+            var tarjetaInfo = $(this).next('.tarjeta-info');
+            var tipoTarjeta = obtenerTipoTarjeta($(this).closest('tr').find('.numero-tarjeta').text());
+            var logoTarjeta = obtenerLogoTarjeta(tipoTarjeta);
+            tarjetaInfo.find('.logo-tarjeta').attr('src', logoTarjeta);
+            tarjetaInfo.toggle();
+        });
+
+        $('#inputId').on('input', function () {
+            var inputValue = $(this).val().replace(/\D/g, '');
+            var limitedValue = inputValue.substring(0, 9);
+            var formattedValue = limitedValue.replace(/(\d{1})(\d{4})(\d{4})/, '$1-$2-$3');
+            $(this).val(formattedValue);
+        });
+
+        $('#btnBuscar').click(function () {
+            var searchTermId = $('#inputId').val().trim().toLowerCase(); // Término de búsqueda de ID en minúsculas
+            var searchTermNombre = $('#inputNombre').val().trim().toLowerCase(); // Término de búsqueda de nombre en minúsculas
+            $('tbody tr').hide().filter(function () {
+                var id = $(this).find('td:first-child').text().trim().toLowerCase(); // ID del usuario en minúsculas
+                var nombre = $(this).find('td:nth-child(3)').text().trim().toLowerCase(); // Nombre del usuario en minúsculas
+                return id.includes(searchTermId) && nombre.includes(searchTermNombre); // Coincidencia con ID y nombre
+            }).show();
+        });
+
+        $('#btnRestablecer').click(function () {
+            $('tbody tr').show();
+            $('#inputId').val('');
+            $('#inputNombre').val('');
+        });
+    });
+
+    function obtenerTipoTarjeta(numeroTarjeta) {
+
+        if (/^4/.test(numeroTarjeta)) {
+            return 'Visa';
+        } else if (/^5[1-5]/.test(numeroTarjeta)) {
+            return 'MasterCard';
+        } else if (/^3[47]/.test(numeroTarjeta)) {
+            return 'American Express';
+        } else {
+            return 'Otro';
+        }
+    }
+
+    function obtenerLogoTarjeta(tipoTarjeta) {
+        var logo = '';
+        switch (tipoTarjeta) {
+            case 'Visa':
+                logo = '/img/bg-img/logovisa.png';
+                break;
+            case 'MasterCard':
+                logo = '/img/bg-img/logomastercard.png';
+                break;
+            case 'American Express':
+                logo = '/img/bg-img/logoamerican.png';
+                break;
+            default:
+                logo = '/img/bg-img/default.png'; // Logo predeterminado si no se encuentra el tipo de tarjeta
+                break;
+        }
+        return logo;
+    }
+</script>

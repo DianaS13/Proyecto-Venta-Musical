@@ -1,0 +1,53 @@
+﻿@model PIV_PROYECTO_Final.Models.CANCIONES_USUARIO
+
+@{
+	ViewData["Title"] = "Delete";
+}
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<h2>¿Desea eliminar la canción del carrito?</h2>
+<div>
+	<hr />
+	<dl class="row">
+		<dt class="col-sm-2">
+			<strong>Cancion</strong>
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.IdCancionNavigation.NombreCancion)
+		</dd>
+		<dt class="col-sm-2">
+			<strong>Genero</strong>
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.IdCancionNavigation.CodigoGenero)
+		</dd>
+		<dt class="col-sm-2">
+			<strong>Precio</strong>
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.IdCancionNavigation.PrecioCancion)
+		</dd>
+		<dt class="col-sm-2">
+			<strong>Código de la Cancion</strong>
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.ID_CANCION)
+		</dd>
+		<dt class="col-sm-2">
+			<strong>Cedula</strong>
+		</dt>
+		<dd class="col-sm-10">
+			@Html.DisplayFor(model => model.ID_USUARIO)
+		</dd>
+	</dl>
+
+	<form asp-action="Delete">
+		<input type="hidden" asp-for="ID_CANCIONES_USUARIO" />
+		<input type="submit" value="Eliminar" class="btn btn-danger" />
+		<a asp-action="Index" class="btn btn-primary">Volver al Carrito</a>
+	</form>
+</div>
